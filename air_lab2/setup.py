@@ -1,12 +1,6 @@
 from setuptools import setup
 
-import glob
-
-# And modify data_files line so that it looks like this:
-
-
-package_name = 'air_lab_common'
-
+package_name = 'air_lab2'
 
 setup(
     name=package_name,
@@ -16,7 +10,6 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + "/screen", glob.glob('screen/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'lab2_node = air_lab2.lab2_node:main'
         ],
     },
 )
