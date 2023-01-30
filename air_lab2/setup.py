@@ -19,8 +19,10 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
-            'lab2_node = air_lab2.lab2_node:main'
+    'console_scripts': [
+       'lab2_node = air_lab2.lab2_node:main',
+       'random_exploration = air_lab2.random_exploration:main'
         ],
     },
+
 )
