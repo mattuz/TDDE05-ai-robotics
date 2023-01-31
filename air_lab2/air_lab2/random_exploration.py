@@ -41,21 +41,20 @@ class RandomExploration(Node):
 
     def get_result_callback(self, future):
         #rclpy.shutdown(context = self.context)
-        self.destroy_node()
         print("Shutdown, done")
+        raise SystemExit
+
 
     def feedback_callback(self, feedback_msg):
         #self.get_logger().info('Received feedback: {0}'.format(feedback_msg.feedback.navigation_time))
         time = feedback_msg.feedback.navigation_time.sec
         x = round(feedback_msg.feedback.current_pose.pose.position.x, 2)
         y = round(feedback_msg.feedback.current_pose.pose.position.y, 2)
-        print(time - self.pos_time)
         if (x,y) != self.old_pos:
             self.pos_time = time
 
         if time - self.pos_time >= 4:
             self._goal_handle.cancel_goal_async()
-            self.destroy_node()
             print("Shutdown timeout")
 
         self.old_pos = (x,y)
@@ -71,9 +70,11 @@ def main(args=None):
         action_client = RandomExploration()
 
         action_client.send_goal(x, y, 1.0)
-
-        rclpy.spin(action_client)
-        print("Done with rclpy spin")
+        try:
+            rclpy.spin(action_client)
+        except:
+            print("Done with rclpy spin")
+            action_client.destroy_node()
 
 
 if __name__ == '__main__':

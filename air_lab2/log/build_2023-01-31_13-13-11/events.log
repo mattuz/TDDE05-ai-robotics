@@ -1,0 +1,65 @@
+[0.000000] (-) TimerEvent: {}
+[0.000176] (air_lab2) JobQueued: {'identifier': 'air_lab2', 'dependencies': OrderedDict()}
+[0.000217] (air_lab2) JobStarted: {'identifier': 'air_lab2'}
+[0.098471] (-) TimerEvent: {}
+[0.199056] (-) TimerEvent: {}
+[0.299748] (-) TimerEvent: {}
+[0.400619] (-) TimerEvent: {}
+[0.501511] (-) TimerEvent: {}
+[0.602491] (-) TimerEvent: {}
+[0.702973] (-) TimerEvent: {}
+[0.803353] (-) TimerEvent: {}
+[0.903736] (-) TimerEvent: {}
+[1.004211] (-) TimerEvent: {}
+[1.104754] (-) TimerEvent: {}
+[1.205253] (-) TimerEvent: {}
+[1.305740] (-) TimerEvent: {}
+[1.362563] (air_lab2) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', 'build/air_lab2', 'build', '--build-base', '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/build/air_lab2/build', 'install', '--record', '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/build/air_lab2/install.log', '--single-version-externally-managed'], 'cwd': '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2', 'env': {'IDEA': '/opt/liu/idea-community/2022.3.1', 'MAIL': '/var/spool/mail/antel460', 'USER': 'antel460', 'SSH_AGENT_PID': '864657', 'XDG_SESSION_TYPE': 'x11', 'LOADEDMODULES_modshare': 'prog/vscode/1.74.2:1:courses/TDDE05:1:prog/idea-community/2022.3.1:1:null:1:courses/TDDE30:1', 'TLPROFILE': 'xfce', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/courses/TDDE05/software/extra/mongo/inst/lib:/courses/TDDE05/software/extra/bullet/inst/lib:/courses/TDDE05/software/lrs-pkg/inst/lib:/opt/thinlinc/lib64:/opt/thinlinc/lib', 'HOME': '/home/antel460', 'OLDPWD': '/home/antel460/TDDE05/ros2_ws/src/labs', 'DESKTOP_SESSION': 'xfce', 'LRS_PKG_INST': '/courses/TDDE05/software/lrs-pkg/inst', 'PANEL_GDK_CORE_DEVICE_EVENTS': '0', 'MODULEPATH_modshare': '/etc/environment-modules/modules:1:/usr/share/modules/$MODULE_VERSION/modulefiles:1:/usr/share/modules/modulefiles:1:/usr/share/modules/versions:1', 'GTK_MODULES': 'appmenu-gtk-module', 'CMAKE_PREFIX_PATH_modshare': '/courses/TDDE05/software/extra/mongo/inst/:1:/courses/TDDE05/software/extra/bullet/inst/:1:/courses/TDDE05/software/lrs-pkg/inst:1', 'MODULES_CMD': '/usr/lib/x86_64-linux-gnu/modulecmd.tcl', 'PCSCTUN_SERVER': '127.0.0.1:5086', 'ENV': '/usr/share/modules/init/profile.sh', '_LMFILES_': '/usr/share/modules/modulefiles/null:/etc/environment-modules/modules/prog/vscode/1.74.2:/etc/environment-modules/modules/prog/idea-community/2022.3.1:/etc/environment-modules/modules/courses/TDDE30:/etc/environment-modules/modules/courses/TDDE05', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1500012484/bus', 'COLORTERM': 'truecolor', 'MODULES_LMNOTUASKED': 'prog/idea-community/2022.3.1', 'LRS_PKG_ROOT': '/courses/TDDE05/software/lrs-pkg', 'UBUNTU_MENUPROXY': '1', 'LOGNAME': 'antel460', 'LD_LIBRARY_PATH_modshare': '/courses/TDDE05/software/lrs-pkg/inst/lib:1:/opt/thinlinc/lib:1:/opt/thinlinc/lib64:1:/courses/TDDE05/software/extra/mongo/inst/lib:1:/courses/TDDE05/software/extra/bullet/inst/lib:1', 'WINDOWID': '58720259', 'IDEA_BASEDIR': '/opt/liu/idea-community/2022.3.1', 'PULSE_SERVER': '/var/opt/thinlinc/sessions/antel460/18/pulse/native 127.0.0.1:5085', 'TLPREFIX': '/opt/thinlinc', '_': '/bin/colcon', 'PKG_CONFIG_PATH': '/courses/TDDE05/software/extra/mongo/inst/lib/pkgconfig:/courses/TDDE05/software/extra/bullet/inst/lib/pkgconfig:/courses/TDDE05/software/lrs-pkg/inst/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'antel460', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '803', 'PATH': '/courses/TDDE05/software/extra/mongo/inst/bin:/courses/TDDE05/software/lrs-pkg/inst/bin:/courses/TDDE05/software/lrs-pkg/lrs-pkg:/courses/TDDE05/software/bin:/opt/liu/idea-community/2022.3.1/bin:/opt/liu/vscode/1.74.2/bin:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/snap/bin:/opt/puppetlabs/bin', 'SESSION_MANAGER': 'local/tlvm-4-1-2:@/tmp/.ICE-unix/864600,unix/tlvm-4-1-2:/tmp/.ICE-unix/864600', 'PULSE_RUNTIME_PATH': '/var/opt/thinlinc/sessions/antel460/18/pulse', 'PCSCTUN_COOKIE': '/var/opt/thinlinc/sessions/antel460/18/pcsctun-cookie', '_LMFILES__modshare': '/etc/environment-modules/modules/prog/vscode/1.74.2:1:/etc/environment-modules/modules/courses/TDDE05:1:/usr/share/modules/modulefiles/null:1:/etc/environment-modules/modules/prog/idea-community/2022.3.1:1:/etc/environment-modules/modules/courses/TDDE30:1', 'XDG_MENU_PREFIX': 'xfce-', 'MODULES_LMNOTUASKED_modshare': 'prog/idea-community/2022.3.1:1', 'XDG_RUNTIME_DIR': '/run/user/1500012484', 'ICEAUTHORITY': '/tmp/antel460-ICE/.ICEauthority', 'MODULES_LMPREREQ': 'courses/TDDE30&prog/idea-community/2022.3.1&prog/vscode', 'DISPLAY': ':18.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'XDG_SESSION_DESKTOP': 'xfce', 'XAUTHORITY': '/var/opt/thinlinc/sessions/antel460/18/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'IDEA_BASEDIR_modshare': '/opt/liu/idea-community/2022.3.1:1', 'SSH_AUTH_SOCK': '/tmp/ssh-csso5eldTKY1/agent.864656', 'PULSE_COOKIE': '/var/opt/thinlinc/sessions/antel460/18/pulse-cookie', 'LC_MESSAGES': 'en_GB.UTF-8', 'SHELL': '/bin/bash', 'PKG_CONFIG_PATH_modshare': '/courses/TDDE05/software/extra/mongo/inst/lib/pkgconfig:1:/courses/TDDE05/software/extra/bullet/inst/lib/pkgconfig:1:/courses/TDDE05/software/lrs-pkg/inst/lib/pkgconfig:1', 'KRB5CCNAME': '/tmp/krb5cc_1500012484_NiiaMO', 'PATH_modshare': '/courses/TDDE05/software/lrs-pkg/lrs-pkg:1:/usr/bin:1:/opt/thinlinc/bin:1:/usr/local/bin:1:/courses/TDDE05/software/lrs-pkg/inst/bin:1:/opt/liu/vscode/1.74.2/bin:1:/bin:1:/courses/TDDE05/software/extra/mongo/inst/bin:1:/opt/puppetlabs/bin:1:/snap/bin:1:/courses/TDDE05/software/bin:1:/usr/bin/X11:1:/sbin:1:/usr/sbin:1:/opt/liu/idea-community/2022.3.1/bin:1:/usr/local/sbin:1', 'BASH_ENV': '/usr/share/modules/init/bash', 'PWD': '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/build/air_lab2', 'TLSESSIONDATA': '/var/opt/thinlinc/sessions/antel460/18', 'LOADEDMODULES': 'null:prog/vscode/1.74.2:prog/idea-community/2022.3.1:courses/TDDE30:courses/TDDE05', 'MODULES_LMPREREQ_modshare': 'courses/TDDE30&prog/idea-community/2022.3.1&prog/vscode:1', 'XDG_CONFIG_DIRS': '/etc/xdg', 'VSCODE': '/opt/liu/vscode/1.74.2', 'TOWN': 'Springfield', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share', 'COLCON': '1', 'MANPATH': '::/opt/puppetlabs/puppet/share/man:/opt/thinlinc/share/man', 'VTE_VERSION': '6003', 'MODULEPATH': '/etc/environment-modules/modules:/usr/share/modules/versions:/usr/share/modules/$MODULE_VERSION/modulefiles:/usr/share/modules/modulefiles', 'MODULESHOME': '/usr/share/modules', 'CMAKE_PREFIX_PATH': '/courses/TDDE05/software/extra/mongo/inst/:/courses/TDDE05/software/extra/bullet/inst/:/courses/TDDE05/software/lrs-pkg/inst', 'PYTHONPATH': '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/build/air_lab2/prefix_override:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2/lib/python3.8/site-packages:'}, 'shell': False}
+[1.406104] (-) TimerEvent: {}
+[1.506865] (-) TimerEvent: {}
+[1.607396] (-) TimerEvent: {}
+[1.707970] (-) TimerEvent: {}
+[1.763493] (air_lab2) StdoutLine: {'line': b'running egg_info\n'}
+[1.764801] (air_lab2) StdoutLine: {'line': b'writing build/air_lab2/air_lab2.egg-info/PKG-INFO\n'}
+[1.768860] (air_lab2) StdoutLine: {'line': b'writing dependency_links to build/air_lab2/air_lab2.egg-info/dependency_links.txt\n'}
+[1.773010] (air_lab2) StdoutLine: {'line': b'writing entry points to build/air_lab2/air_lab2.egg-info/entry_points.txt\n'}
+[1.775776] (air_lab2) StdoutLine: {'line': b'writing requirements to build/air_lab2/air_lab2.egg-info/requires.txt\n'}
+[1.777970] (air_lab2) StdoutLine: {'line': b'writing top-level names to build/air_lab2/air_lab2.egg-info/top_level.txt\n'}
+[1.808173] (-) TimerEvent: {}
+[1.908724] (-) TimerEvent: {}
+[2.009295] (-) TimerEvent: {}
+[2.110003] (-) TimerEvent: {}
+[2.210553] (-) TimerEvent: {}
+[2.311223] (-) TimerEvent: {}
+[2.413878] (-) TimerEvent: {}
+[2.514420] (-) TimerEvent: {}
+[2.614835] (-) TimerEvent: {}
+[2.715308] (-) TimerEvent: {}
+[2.815831] (-) TimerEvent: {}
+[2.916403] (-) TimerEvent: {}
+[3.016830] (-) TimerEvent: {}
+[3.117337] (-) TimerEvent: {}
+[3.217943] (-) TimerEvent: {}
+[3.318514] (-) TimerEvent: {}
+[3.376541] (air_lab2) StdoutLine: {'line': b"writing manifest file 'build/air_lab2/air_lab2.egg-info/SOURCES.txt'\n"}
+[3.382308] (air_lab2) StdoutLine: {'line': b'running build\n'}
+[3.383773] (air_lab2) StdoutLine: {'line': b'running build_py\n'}
+[3.384045] (air_lab2) StdoutLine: {'line': b'copying air_lab2/random_exploration.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/build/air_lab2/build/lib/air_lab2\n'}
+[3.393871] (air_lab2) StdoutLine: {'line': b'running install\n'}
+[3.395418] (air_lab2) StdoutLine: {'line': b'running install_lib\n'}
+[3.402689] (air_lab2) StdoutLine: {'line': b'copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/build/air_lab2/build/lib/air_lab2/random_exploration.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2/lib/python3.8/site-packages/air_lab2\n'}
+[3.414374] (air_lab2) StdoutLine: {'line': b'byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2/lib/python3.8/site-packages/air_lab2/random_exploration.py to random_exploration.cpython-38.pyc\n'}
+[3.418578] (-) TimerEvent: {}
+[3.425888] (air_lab2) StdoutLine: {'line': b'running install_data\n'}
+[3.426539] (air_lab2) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.427567] (air_lab2) StdoutLine: {'line': b"removing '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2/lib/python3.8/site-packages/air_lab2-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[3.438001] (air_lab2) StdoutLine: {'line': b'Copying build/air_lab2/air_lab2.egg-info to /home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2/lib/python3.8/site-packages/air_lab2-0.0.0-py3.8.egg-info\n'}
+[3.494228] (air_lab2) StdoutLine: {'line': b'running install_scripts\n'}
+[3.518705] (-) TimerEvent: {}
+[3.519726] (air_lab2) StdoutLine: {'line': b'Installing lab2_node script to /home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2/lib/air_lab2\n'}
+[3.525521] (air_lab2) StdoutLine: {'line': b'Installing random_exploration script to /home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2/lib/air_lab2\n'}
+[3.532412] (air_lab2) StdoutLine: {'line': b"writing list of installed files to '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/build/air_lab2/install.log'\n"}
+[3.565371] (air_lab2) CommandEnded: {'returncode': 0}
+[3.619888] (-) TimerEvent: {}
+[3.645074] (air_lab2) JobEnded: {'identifier': 'air_lab2', 'rc': 0}
+[3.651667] (-) EventReactorShutdown: {}
