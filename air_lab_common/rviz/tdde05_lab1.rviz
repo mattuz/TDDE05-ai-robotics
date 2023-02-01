@@ -7,6 +7,8 @@ Panels:
         - /Global Options1
         - /Status1
         - /RobotModel1/Description Topic1
+        - /Map2
+        - /Map3
       Splitter Ratio: 0.5
     Tree Height: 409
   - Class: rviz_common/Selection
@@ -547,7 +549,7 @@ Visualization Manager:
       Value: true
     - Alpha: 0.699999988079071
       Class: rviz_default_plugins/Map
-      Color Scheme: map
+      Color Scheme: costmap
       Draw Behind: false
       Enabled: true
       Name: Map
@@ -568,7 +570,7 @@ Visualization Manager:
       Value: true
     - Alpha: 0.699999988079071
       Class: rviz_default_plugins/Map
-      Color Scheme: map
+      Color Scheme: costmap
       Draw Behind: false
       Enabled: true
       Name: Map
@@ -705,10 +707,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.0343940258026123
+      Pitch: 0.8493940830230713
       Target Frame: <Fixed Frame>
       Value: ThirdPersonFollower (rviz_default_plugins)
-      Yaw: 0.013249168172478676
+      Yaw: 0.0682491734623909
     Saved: ~
 Window Geometry:
   Displays:
