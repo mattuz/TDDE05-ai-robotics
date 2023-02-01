@@ -65,8 +65,8 @@ def main(args=None):
 
     while(True):
         print("Starting over")
-        x = random.uniform(-5, 5)
-        y = random.uniform(-5, 5)
+        x = random.uniform(-3, 3)
+        y = random.uniform(-3, 3)
         action_client = RandomExploration()
 
         action_client.send_goal(x, y, 1.0)
