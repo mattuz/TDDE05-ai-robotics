@@ -45,6 +45,9 @@ class MinimalService(Node):
         self.tst_executor_registry.registerNodeExecutor(
             self.tst_registry.model("drive-to"),
             DriveToExecutor)
+        self.tst_executor_registry.registerNodeExecutor(
+            self.tst_registry.model("explore"),
+            ExploreExecutor)
 
 
     def execute_tst_callback(self, request, response):
