@@ -24,7 +24,7 @@ class DriveToExecutor(TstML.Executor.AbstractNodeExecutor):
   def __init__(self, node, context):
     super(TstML.Executor.AbstractNodeExecutor, self).__init__(node,
           context)
-  
+    self.finished = True
     self.ros_node = Node(gen_name("driveto_node"))
     self.subscriber_ = self.ros_node.create_subscription(Odometry, '/odom', 10)
     self._action_client = ActionClient(self.ros_node, NavigateToPose, 'navigate_to_pose')
@@ -37,26 +37,35 @@ class DriveToExecutor(TstML.Executor.AbstractNodeExecutor):
     self.executor.shutdown()
 
   def start(self):
-    r = 0
+    radius = 0
+    theta = 0
+    a = 0
+    b = 1
 
     if self.node().hasParameter(TstML.TSTNode.ParameterType.Specific, "radius"):
       radius = self.node().getParameter(TstML.TSTNode.ParameterType.Specific, "radius")
       print("radius given", radius)
 
-    goal_msg = NavigateToPose.Goal()
-    goal_msg.pose.header.frame_id = "map"
-    goal_msg.pose.pose.position.x = float(x)
-    goal_msg.pose.pose.position.y = float(y)
-    goal_msg.pose.pose.orientation.w = math.cos(yaw/2)
-    goal_msg.pose.pose.orientation.z = math.sin(yaw/2)
-    print("goal_set")
-    #self._action_client.wait_for_server()
-    print("past wait")
-    self._send_goal_future = self._action_client.send_goal_async(goal_msg, self.feedback_callback)
-    print("past send goal_async")
-    self._send_goal_future.add_done_callback(self.goal_response_callback)
+    self.finished = True
+    
+    while((a+b*theta) < radius and self.finished):
+      x = (a + b * theta) * math.cos(theta)
+      y = (a + b * theta) * math.sin(theta)
 
-    print("past send goal_callback")
+      theta += math.pi / 4
+
+      goal_msg = NavigateToPose.Goal()
+      goal_msg.pose.header.frame_id = "map"
+      goal_msg.pose.pose.position.x = float(x)
+      goal_msg.pose.pose.position.y = float(y)
+      self.finished = False
+      print("goal_set")
+      #self._action_client.wait_for_server()
+      print("past wait")
+      self._send_goal_future = self._action_client.send_goal_async(goal_msg, self.feedback_callback)
+      print("past send goal_async")
+      self._send_goal_future.add_done_callback(self.goal_response_callback)
+      print("past send goal_callback")
 
     return TstML.Executor.ExecutionStatus.Started()
 
@@ -75,7 +84,7 @@ class DriveToExecutor(TstML.Executor.AbstractNodeExecutor):
       self._get_result_future.add_done_callback(self.handle_result_callback)
 
   def handle_result_callback(self, future):
-    print("Finished!")
+    self.finished = True
     self.executionFinished(TstML.Executor.ExecutionStatus.Finished())
 
   def pause(self):
