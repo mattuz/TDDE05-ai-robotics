@@ -45,10 +45,17 @@ class DriveToExecutor(TstML.Executor.AbstractNodeExecutor):
     if self.node().hasParameter(TstML.TSTNode.ParameterType.Specific, "radius"):
       radius = self.node().getParameter(TstML.TSTNode.ParameterType.Specific, "radius")
       print("radius given", radius)
+    
+    TstML.Executor.ExecutionStatus.Started()
 
     self.finished = True
-    
-    while((a+b*theta) < radius and self.finished):
+
+    while((a+b*theta) < radius):
+
+      #Wait for previous mission to finish
+      while not self.finished:
+        pass
+        
       x = (a + b * theta) * math.cos(theta)
       y = (a + b * theta) * math.sin(theta)
 
@@ -67,7 +74,8 @@ class DriveToExecutor(TstML.Executor.AbstractNodeExecutor):
       self._send_goal_future.add_done_callback(self.goal_response_callback)
       print("past send goal_callback")
 
-    return TstML.Executor.ExecutionStatus.Started()
+    self.executionFinished(TstML.Executor.ExecutionStatus.Finished())
+    return TstML.Executor.ExecutionStatus.Finished()
 
   def feedback_callback(self, feedback_msg):
     print(feedback_msg.feedback)
@@ -85,7 +93,7 @@ class DriveToExecutor(TstML.Executor.AbstractNodeExecutor):
 
   def handle_result_callback(self, future):
     self.finished = True
-    self.executionFinished(TstML.Executor.ExecutionStatus.Finished())
+    #self.executionFinished(TstML.Executor.ExecutionStatus.Finished())
 
   def pause(self):
     self.ros_node.get_logger().info('Pause is not possible.')
