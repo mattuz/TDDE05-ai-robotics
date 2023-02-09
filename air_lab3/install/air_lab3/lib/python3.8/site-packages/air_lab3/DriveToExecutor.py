@@ -10,7 +10,6 @@ import TstML.Executor
 
 from nav2_msgs.action import NavigateToPose
 from nav2_msgs.msg import SpeedLimit
-from nav_msgs.msg import Odometry
 
 import ament_index_python
 
@@ -21,13 +20,13 @@ def gen_name(name):
     ros_name_counter += 1
     return name + str(ros_name_counter)
 
-class ExploreExecutor(TstML.Executor.AbstractNodeExecutor):
+class DriveToExecutor(TstML.Executor.AbstractNodeExecutor):
   def __init__(self, node, context):
     super(TstML.Executor.AbstractNodeExecutor, self).__init__(node,
           context)
-    self.finished = True
-    self.ros_node = Node(gen_name("explore_node"))
-    self.subscriber_ = self.ros_node.create_subscription(Odometry, '/odom', 10)
+  
+    self.ros_node = Node(gen_name("driveto_node"))
+    self.publisher_ = self.ros_node.create_publisher(SpeedLimit, '/speed_limit', 10)
     self._action_client = ActionClient(self.ros_node, NavigateToPose, 'navigate_to_pose')
     self.executor = rclpy.executors.MultiThreadedExecutor()
     self.executor.add_node(self.ros_node)
@@ -38,47 +37,45 @@ class ExploreExecutor(TstML.Executor.AbstractNodeExecutor):
     self.executor.shutdown()
 
   def start(self):
-    radius = 0
-    theta = 0
-    ax = 0
-    ay = 0
-    #Use subscriber here to get start position of the spiral and assign accordingly
-    b = 1
+    x = float(0)
+    y = float(0)
+    yaw = float(0)
 
-    if self.node().hasParameter(TstML.TSTNode.ParameterType.Specific, "radius"):
-      radius = self.node().getParameter(TstML.TSTNode.ParameterType.Specific, "radius")
-      print("radius given", radius)
-    
-    TstML.Executor.ExecutionStatus.Started()
+    if self.node().hasParameter(TstML.TSTNode.ParameterType.Specific, "p"):
+      p = self.node().getParameter(TstML.TSTNode.ParameterType.Specific, "p")
+      x = p['x']
+      y = p['y']
+      print("Set some values ", p)
 
-    self.finished = True
+    if self.node().hasParameter(TstML.TSTNode.ParameterType.Specific, "heading"):
+      yaw = self.node().getParameter(TstML.TSTNode.ParameterType.Specific, "heading")
 
-    while((b*theta) < radius):
+      
+    if self.node().hasParameter(TstML.TSTNode.ParameterType.Specific, "maximum-speed"):
+      sped = self.node().getParameter(TstML.TSTNode.ParameterType.Specific, "maximum-speed")
+      msg = SpeedLimit()
 
-      #Wait for previous mission to finish
-      while not self.finished:
-        pass
-        
-      x = (ax + b * theta) * math.cos(theta)
-      y = (ay + b * theta) * math.sin(theta)
+      msg.percentage = False
+      msg.speed_limit = sped
 
-      theta += math.pi / 4
+      self.publisher_.publish(msg)
 
-      goal_msg = NavigateToPose.Goal()
-      goal_msg.pose.header.frame_id = "map"
-      goal_msg.pose.pose.position.x = float(x)
-      goal_msg.pose.pose.position.y = float(y)
-      self.finished = False
-      print("goal_set")
-      #self._action_client.wait_for_server()
-      print("past wait")
-      self._send_goal_future = self._action_client.send_goal_async(goal_msg, self.feedback_callback)
-      print("past send goal_async")
-      self._send_goal_future.add_done_callback(self.goal_response_callback)
-      print("past send goal_callback")
+    goal_msg = NavigateToPose.Goal()
+    goal_msg.pose.header.frame_id = "map"
+    goal_msg.pose.pose.position.x = float(x)
+    goal_msg.pose.pose.position.y = float(y)
+    goal_msg.pose.pose.orientation.w = math.cos(yaw/2)
+    goal_msg.pose.pose.orientation.z = math.sin(yaw/2)
+    print("goal_set")
+    #self._action_client.wait_for_server()
+    print("past wait")
+    self._send_goal_future = self._action_client.send_goal_async(goal_msg, self.feedback_callback)
+    print("past send goal_async")
+    self._send_goal_future.add_done_callback(self.goal_response_callback)
 
-    self.executionFinished(TstML.Executor.ExecutionStatus.Finished())
-    return TstML.Executor.ExecutionStatus.Finished()
+    print("past send goal_callback")
+
+    return TstML.Executor.ExecutionStatus.Started()
 
   def feedback_callback(self, feedback_msg):
     print(feedback_msg.feedback)
@@ -95,8 +92,8 @@ class ExploreExecutor(TstML.Executor.AbstractNodeExecutor):
       self._get_result_future.add_done_callback(self.handle_result_callback)
 
   def handle_result_callback(self, future):
-    self.finished = True
-    #self.executionFinished(TstML.Executor.ExecutionStatus.Finished())
+    print("Finished!")
+    self.executionFinished(TstML.Executor.ExecutionStatus.Finished())
 
   def pause(self):
     self.ros_node.get_logger().info('Pause is not possible.')

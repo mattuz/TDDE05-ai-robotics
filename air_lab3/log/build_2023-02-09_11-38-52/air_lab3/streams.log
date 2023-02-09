@@ -1,0 +1,52 @@
+[1.492s] Invoking command in '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab3': PYTHONPATH=/home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/prefix_override:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/air_lab3 build --build-base /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build install --record /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/install.log --single-version-externally-managed
+[2.012s] running egg_info
+[2.013s] creating build/air_lab3/air_lab3.egg-info
+[2.014s] writing build/air_lab3/air_lab3.egg-info/PKG-INFO
+[2.018s] writing dependency_links to build/air_lab3/air_lab3.egg-info/dependency_links.txt
+[2.020s] writing entry points to build/air_lab3/air_lab3.egg-info/entry_points.txt
+[2.022s] writing requirements to build/air_lab3/air_lab3.egg-info/requires.txt
+[2.023s] writing top-level names to build/air_lab3/air_lab3.egg-info/top_level.txt
+[2.027s] writing manifest file 'build/air_lab3/air_lab3.egg-info/SOURCES.txt'
+[3.164s] writing manifest file 'build/air_lab3/air_lab3.egg-info/SOURCES.txt'
+[3.166s] running build
+[3.166s] running build_py
+[3.168s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build
+[3.168s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib
+[3.169s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3
+[3.170s] copying air_lab3/DriveToExecutor.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3
+[3.174s] copying air_lab3/DockExecutor.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3
+[3.178s] copying air_lab3/tst_executor.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3
+[3.180s] copying air_lab3/__init__.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3
+[3.183s] copying air_lab3/UndockExecutor.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3
+[3.186s] copying air_lab3/lab3_node.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3
+[3.190s] copying air_lab3/ExploreExecutor.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3
+[3.193s] running install
+[3.196s] running install_lib
+[3.200s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[3.200s] copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3/__init__.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[3.203s] copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3/DriveToExecutor.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[3.206s] copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3/tst_executor.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[3.212s] copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3/lab3_node.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[3.216s] copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3/DockExecutor.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[3.220s] copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3/UndockExecutor.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[3.224s] copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build/lib/air_lab3/ExploreExecutor.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[3.230s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3/__init__.py to __init__.cpython-38.pyc
+[3.236s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3/DriveToExecutor.py to DriveToExecutor.cpython-38.pyc
+[3.244s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3/tst_executor.py to tst_executor.cpython-38.pyc
+[3.247s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3/lab3_node.py to lab3_node.cpython-38.pyc
+[3.251s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3/DockExecutor.py to DockExecutor.cpython-38.pyc
+[3.259s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3/UndockExecutor.py to UndockExecutor.cpython-38.pyc
+[3.264s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3/ExploreExecutor.py to ExploreExecutor.cpython-38.pyc
+[3.269s] running install_data
+[3.271s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/share/ament_index
+[3.271s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/share/ament_index/resource_index
+[3.272s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/share/ament_index/resource_index/packages
+[3.273s] copying resource/air_lab3 -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/share/ament_index/resource_index/packages
+[3.276s] copying package.xml -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/share/air_lab3
+[3.279s] running install_egg_info
+[3.282s] Copying build/air_lab3/air_lab3.egg-info to /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages/air_lab3-0.0.0-py3.8.egg-info
+[3.310s] running install_scripts
+[3.338s] Installing lab3_node script to /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/air_lab3
+[3.341s] Installing tst_executor script to /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/air_lab3
+[3.346s] writing list of installed files to '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/install.log'
+[3.378s] Invoked command in '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab3' returned '0': PYTHONPATH=/home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/prefix_override:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/install/air_lab3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/air_lab3 build --build-base /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/build install --record /home/antel460/TDDE05/ros2_ws/src/labs/air_lab3/build/air_lab3/install.log --single-version-externally-managed

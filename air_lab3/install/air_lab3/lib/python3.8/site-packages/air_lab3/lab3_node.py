@@ -4,7 +4,6 @@ import std_srvs.srv
 from .UndockExecutor import UndockExecutor
 from .DockExecutor import DockExecutor
 from .DriveToExecutor import DriveToExecutor
-from .ExploreExecutor import ExploreExecutor
 import rclpy
 from rclpy.node import Node
 import TstML
@@ -98,6 +97,8 @@ def main():
     rclpy.init()
 
     minimal_service = MinimalService()
+
+    group = ReentrantCallbackGroup()
 
     executor = rclpy.executors.MultiThreadedExecutor()
     executor.add_node(minimal_service)

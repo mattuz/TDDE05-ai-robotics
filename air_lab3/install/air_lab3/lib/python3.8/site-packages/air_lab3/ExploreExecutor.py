@@ -10,7 +10,6 @@ import TstML.Executor
 
 from nav2_msgs.action import NavigateToPose
 from nav2_msgs.msg import SpeedLimit
-from nav_msgs.msg import Odometry
 
 import ament_index_python
 
@@ -21,12 +20,12 @@ def gen_name(name):
     ros_name_counter += 1
     return name + str(ros_name_counter)
 
-class ExploreExecutor(TstML.Executor.AbstractNodeExecutor):
+class DriveToExecutor(TstML.Executor.AbstractNodeExecutor):
   def __init__(self, node, context):
     super(TstML.Executor.AbstractNodeExecutor, self).__init__(node,
           context)
     self.finished = True
-    self.ros_node = Node(gen_name("explore_node"))
+    self.ros_node = Node(gen_name("driveto_node"))
     self.subscriber_ = self.ros_node.create_subscription(Odometry, '/odom', 10)
     self._action_client = ActionClient(self.ros_node, NavigateToPose, 'navigate_to_pose')
     self.executor = rclpy.executors.MultiThreadedExecutor()
@@ -40,9 +39,7 @@ class ExploreExecutor(TstML.Executor.AbstractNodeExecutor):
   def start(self):
     radius = 0
     theta = 0
-    ax = 0
-    ay = 0
-    #Use subscriber here to get start position of the spiral and assign accordingly
+    a = 0
     b = 1
 
     if self.node().hasParameter(TstML.TSTNode.ParameterType.Specific, "radius"):
@@ -53,14 +50,14 @@ class ExploreExecutor(TstML.Executor.AbstractNodeExecutor):
 
     self.finished = True
 
-    while((b*theta) < radius):
+    while((a+b*theta) < radius):
 
       #Wait for previous mission to finish
       while not self.finished:
         pass
         
-      x = (ax + b * theta) * math.cos(theta)
-      y = (ay + b * theta) * math.sin(theta)
+      x = (a + b * theta) * math.cos(theta)
+      y = (a + b * theta) * math.sin(theta)
 
       theta += math.pi / 4
 
