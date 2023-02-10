@@ -27,12 +27,19 @@ class ExploreExecutor(TstML.Executor.AbstractNodeExecutor):
           context)
     self.finished = True
     self.ros_node = Node(gen_name("explore_node"))
-    self.subscriber_ = self.ros_node.create_subscription(Odometry, '/odom', 10)
+    self.subscriber_ = self.ros_node.create_subscription(Odometry, '/odom', self.odom_callback, 10)
     self._action_client = ActionClient(self.ros_node, NavigateToPose, 'navigate_to_pose')
     self.executor = rclpy.executors.MultiThreadedExecutor()
     self.executor.add_node(self.ros_node)
     self.thread = threading.Thread(target=self.executor.spin)
     self.thread.start()
+
+    self.ax = 0
+    self.ay = 0
+
+  def odom_callback(self, msg):
+    self.ax = msg.pose.pose.position.x
+    self.ay = msg.pose.pose.position.y
 
   def finalise(self):
     self.executor.shutdown()
@@ -40,10 +47,9 @@ class ExploreExecutor(TstML.Executor.AbstractNodeExecutor):
   def start(self):
     radius = 0
     theta = 0
-    ax = 0
-    ay = 0
-    #Use subscriber here to get start position of the spiral and assign accordingly
-    b = 1
+    b = 0.5
+    start_x = self.ax
+    start_y = self.ay
 
     if self.node().hasParameter(TstML.TSTNode.ParameterType.Specific, "radius"):
       radius = self.node().getParameter(TstML.TSTNode.ParameterType.Specific, "radius")
@@ -53,14 +59,14 @@ class ExploreExecutor(TstML.Executor.AbstractNodeExecutor):
 
     self.finished = True
 
-    while((b*theta) < radius):
+    while(b*theta < radius):
 
       #Wait for previous mission to finish
       while not self.finished:
         pass
         
-      x = (ax + b * theta) * math.cos(theta)
-      y = (ay + b * theta) * math.sin(theta)
+      x = start_x + (b * theta * math.cos(theta))
+      y = start_y + (b * theta * math.sin(theta))
 
       theta += math.pi / 4
 
