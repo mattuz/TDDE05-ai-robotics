@@ -19,6 +19,7 @@ class MinimalService(Node):
     def __init__(self):
         super().__init__('minimal_service')
         self.srv = self.create_service(ExecuteTst, 'execute_tst', self.execute_tst_callback)
+
         self.group = ReentrantCallbackGroup()
         service = self.create_service(std_srvs.srv.Empty, 'abort', self.callback_abort, callback_group=self.group)
         service = self.create_service(std_srvs.srv.Empty, 'stop', self.callback_stop, callback_group=self.group)
@@ -49,7 +50,6 @@ class MinimalService(Node):
         self.tst_executor_registry.registerNodeExecutor(
             self.tst_registry.model("explore"),
             ExploreExecutor)
-
 
     def execute_tst_callback(self, request, response):
         filename = request.tst_file
