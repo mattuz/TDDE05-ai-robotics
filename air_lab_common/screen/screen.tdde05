@@ -37,3 +37,7 @@ stuff "start-tdde05; ros2 action send_goal /undock irobot_create_msgs/action/Und
 screen 6
 title "move to location"
 stuff "start-tdde05; ros2 action send_goal /navigate_to_position irobot_create_msgs/action/NavigateToPosition '{achieve_goal_heading: true,goal_pose:{pose:{position:{x: 3, y: 4,z: 0.0}, orientation:{x: 0.0,y: 0.0, z: 0.0, w: 1.0}}}}'"
+
+screen 7
+title "database"
+stuff "start-tdde05; ros2 run ros2_kdb server\015"
