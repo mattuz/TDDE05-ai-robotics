@@ -78,7 +78,8 @@ class DriveToExecutor(TstML.Executor.AbstractNodeExecutor):
     return TstML.Executor.ExecutionStatus.Started()
 
   def feedback_callback(self, feedback_msg):
-    print(feedback_msg.feedback)
+    pass
+    #print(feedback_msg.feedback)
 
   def goal_response_callback(self, future):
     self._goal_handle = future.result()

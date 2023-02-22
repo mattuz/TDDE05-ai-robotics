@@ -5,10 +5,19 @@ import rclpy.executors
 
 from air_simple_sim_msgs.msg import SemanticObservation
 
+from ros2_kdb_msgs.srv import QueryDatabase, InsertTriples
+
 import TstML
 import TstML.Executor
 
 import ament_index_python
+
+# Ugly hack to get a new name for each node
+ros_name_counter = 0
+def gen_name(name):
+    global ros_name_counter
+    ros_name_counter += 1
+    return name + str(ros_name_counter)
 
 class RecordSemantic(TstML.Executor.AbstractNodeExecutor):
   def __init__(self, node, context):
@@ -23,6 +32,12 @@ class RecordSemantic(TstML.Executor.AbstractNodeExecutor):
     self.thread = threading.Thread(target=self.executor.spin)
     self.thread.start()
 
+    self.query_node = Node(gen_name('query_node'))
+    self.request_node = Node(gen_name('request_node'))
+
+    self.query_client = self.query_node.create_client(QueryDatabase, '/kdb_server/sparql_query')
+    self.request_client = self.request_node.create_client(InsertTriples, '/kdb_server/insert_triples')
+
   def finalise(self):
     self.executor.shutdown()
 
@@ -36,20 +51,23 @@ class RecordSemantic(TstML.Executor.AbstractNodeExecutor):
     if self.node().hasParameter(TstML.TSTNode.ParameterType.Specific, "graphname"):
         self.graphname = self.node().getParameter(TstML.TSTNode.ParameterType.Specific, "graphname") #used for the query, look at example in lab-pm
 
+    return
     self._send_goal_future.add_done_callback(self.goal_response_callback)
     return TstML.Executor.ExecutionStatus.Started()
 
-  def semantic_callback(self, msg):
-    someid = "" # is in the msg
-    someklass = "" # is in the msg
 
-    x = 0 # msg.pose.pose.position.x
-    y = 0 # msg.pose.pose.position.y
+  def semantic_callback(self, msg):
+    someid = msg.uuid # is in the msg
+    someklass = msg.klass # is in the msg
+
+    x = msg.point.point.x
+    y = msg.point.point.y
 
     sql_msg = str("PREFIX gis: <http://www.ida.liu.se/~TDDE05/gis>\n PREFIX properties: <http://www.ida.liu.se/~TDDE05/properties>\n SELECT ?x ?y WHERE" +
             "{"+ f"<{someid}> a <{someklass}> ; properties:location [ gis:x ?x; gis:y ?y ] . "+"}")
     
-    # TODO call sql here 
+    # TODO call sql here
+    breakpoint()
 
   def feedback_callback(self, feedback_msg):
     print(feedback_msg.feedback)
