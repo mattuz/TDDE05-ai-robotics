@@ -3,6 +3,8 @@ import rclpy
 from rclpy.node import Node
 import rclpy.executors
 
+import json
+
 from air_simple_sim_msgs.msg import SemanticObservation
 
 from ros2_kdb_msgs.srv import QueryDatabase, InsertTriples
@@ -37,6 +39,8 @@ class RecordSemantic(TstML.Executor.AbstractNodeExecutor):
 
     self.query_client = self.query_node.create_client(QueryDatabase, '/kdb_server/sparql_query')
     self.request_client = self.request_node.create_client(InsertTriples, '/kdb_server/insert_triples')
+    self.executor.add_node(self.query_node)
+    self.executor.add_node(self.request_node)
 
   def finalise(self):
     self.executor.shutdown()
@@ -51,8 +55,6 @@ class RecordSemantic(TstML.Executor.AbstractNodeExecutor):
     if self.node().hasParameter(TstML.TSTNode.ParameterType.Specific, "graphname"):
         self.graphname = self.node().getParameter(TstML.TSTNode.ParameterType.Specific, "graphname") #used for the query, look at example in lab-pm
 
-    return
-    self._send_goal_future.add_done_callback(self.goal_response_callback)
     return TstML.Executor.ExecutionStatus.Started()
 
 
@@ -66,8 +68,36 @@ class RecordSemantic(TstML.Executor.AbstractNodeExecutor):
     sql_msg = str("PREFIX gis: <http://www.ida.liu.se/~TDDE05/gis>\n PREFIX properties: <http://www.ida.liu.se/~TDDE05/properties>\n SELECT ?x ?y WHERE" +
             "{"+ f"<{someid}> a <{someklass}> ; properties:location [ gis:x ?x; gis:y ?y ] . "+"}")
     
-    # TODO call sql here
-    breakpoint()
+    query_req = QueryDatabase.Request()
+    query_req.graphname = self.graphname
+    query_req.format = 'json'
+    query_req.query = sql_msg
+    self.future = self.query_client.call_async(query_req)
+    self.executor.spin_until_future_complete(self.future)
+
+    data = json.loads(self.future.result().result)
+    print(data)
+    print("Data retrieved")
+    for row in data["results"]["bindings"]:
+      print("Row",row)
+
+    if not len(data["results"]["bindings"]):
+      insert_req = InsertTriples.Request()
+      insert_req.graphname = self.graphname
+      insert_req.format = 'ttl'
+      insert_req.content = str("@prefix gis: <http://www.ida.liu.se/~TDDE05/gis>\n @prefix properties: <http://www.ida.liu.se/~TDDE05/properties>" +
+      "<"+f"{someid}"+"> a <"+f"{someklass}"+">;" +
+            f"properties:location [ gis:x {x}]; gis:y {y} ] .")
+      self.future = self.query_client.call_async(query_req)
+      self.executor.spin_until_future_complete(self.future)
+      breakpoint()
+      print("Data added")
+    
+
+      
+    
+
+    
 
   def feedback_callback(self, feedback_msg):
     print(feedback_msg.feedback)
