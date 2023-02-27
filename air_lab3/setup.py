@@ -21,9 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'tst_executor = air_lab3.tst_executor:main',
-            'lab3_node = air_lab3.lab3_node:main'
-            
-
+            'lab3_node = air_lab3.lab3_node:main',
+            'lab3_vis_node = air_lab3.lab3_vis_node:main'
         ],
     },
 )

@@ -6,6 +6,7 @@ from .DockExecutor import DockExecutor
 from .DriveToExecutor import DriveToExecutor
 from .ExploreExecutor import ExploreExecutor
 from .RecordSemantic import RecordSemantic
+from .GenerateHumans import GenerateHumans
 import rclpy
 from rclpy.node import Node
 import TstML
@@ -54,6 +55,9 @@ class MinimalService(Node):
         self.tst_executor_registry.registerNodeExecutor(
             self.tst_registry.model("record-semantic"),
             RecordSemantic)
+        self.tst_executor_registry.registerNodeExecutor(
+            self.tst_registry.model("generate-humans"),
+            GenerateHumans)
     
 
     def execute_tst_callback(self, request, response):
