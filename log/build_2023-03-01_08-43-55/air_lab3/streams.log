@@ -1,0 +1,65 @@
+[3.587s] Invoking command in '/home/matge373/TDDE05/ros2_ws/src/labs/air_lab3': PYTHONPATH=/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/prefix_override:/home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab3 build --build-base /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build install --record /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/install.log --single-version-externally-managed
+[4.217s] running egg_info
+[4.218s] creating ../build/air_lab3/air_lab3.egg-info
+[4.219s] writing ../build/air_lab3/air_lab3.egg-info/PKG-INFO
+[4.224s] writing dependency_links to ../build/air_lab3/air_lab3.egg-info/dependency_links.txt
+[4.227s] writing entry points to ../build/air_lab3/air_lab3.egg-info/entry_points.txt
+[4.229s] writing requirements to ../build/air_lab3/air_lab3.egg-info/requires.txt
+[4.231s] writing top-level names to ../build/air_lab3/air_lab3.egg-info/top_level.txt
+[4.249s] writing manifest file '../build/air_lab3/air_lab3.egg-info/SOURCES.txt'
+[6.722s] writing manifest file '../build/air_lab3/air_lab3.egg-info/SOURCES.txt'
+[6.724s] running build
+[6.724s] running build_py
+[6.726s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build
+[6.726s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib
+[6.727s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.728s] copying air_lab3/ExploreExecutor.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.732s] copying air_lab3/lab3_node.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.736s] copying air_lab3/RecordSemantic.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.740s] copying air_lab3/__init__.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.742s] copying air_lab3/UndockExecutor.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.746s] copying air_lab3/lab3_vis_node.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.749s] copying air_lab3/GenerateHumans.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.761s] copying air_lab3/tst_executor.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.766s] copying air_lab3/DriveToExecutor.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.770s] copying air_lab3/HumanHarassment.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.773s] copying air_lab3/DockExecutor.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[6.777s] running install
+[6.780s] running install_lib
+[6.786s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.793s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/RecordSemantic.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.797s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/DriveToExecutor.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.803s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/HumanHarassment.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.807s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/lab3_node.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.811s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/UndockExecutor.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.818s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/GenerateHumans.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.819s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/tst_executor.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.823s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/lab3_vis_node.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.828s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/DockExecutor.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.833s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/ExploreExecutor.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.847s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/__init__.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[6.856s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/RecordSemantic.py to RecordSemantic.cpython-38.pyc
+[6.863s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/DriveToExecutor.py to DriveToExecutor.cpython-38.pyc
+[6.880s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/HumanHarassment.py to HumanHarassment.cpython-38.pyc
+[6.886s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/lab3_node.py to lab3_node.cpython-38.pyc
+[6.893s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/UndockExecutor.py to UndockExecutor.cpython-38.pyc
+[6.934s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/GenerateHumans.py to GenerateHumans.cpython-38.pyc
+[6.936s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/tst_executor.py to tst_executor.cpython-38.pyc
+[6.940s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/lab3_vis_node.py to lab3_vis_node.cpython-38.pyc
+[6.946s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/DockExecutor.py to DockExecutor.cpython-38.pyc
+[6.952s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/ExploreExecutor.py to ExploreExecutor.cpython-38.pyc
+[6.962s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/__init__.py to __init__.cpython-38.pyc
+[6.965s] running install_data
+[6.966s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/share/ament_index
+[6.967s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/share/ament_index/resource_index
+[6.967s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/share/ament_index/resource_index/packages
+[6.971s] copying resource/air_lab3 -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/share/ament_index/resource_index/packages
+[6.972s] copying package.xml -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/share/air_lab3
+[6.975s] running install_egg_info
+[6.976s] Copying ../build/air_lab3/air_lab3.egg-info to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3-0.0.0-py3.8.egg-info
+[7.012s] running install_scripts
+[7.050s] Installing lab3_node script to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/air_lab3
+[7.058s] Installing lab3_vis_node script to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/air_lab3
+[7.058s] Installing tst_executor script to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/air_lab3
+[7.061s] writing list of installed files to '/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/install.log'
+[7.136s] Invoked command in '/home/matge373/TDDE05/ros2_ws/src/labs/air_lab3' returned '0': PYTHONPATH=/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/prefix_override:/home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab3 build --build-base /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/build install --record /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab3/install.log --single-version-externally-managed

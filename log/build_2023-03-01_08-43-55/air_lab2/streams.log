@@ -1,0 +1,40 @@
+[3.744s] Invoking command in '/home/matge373/TDDE05/ros2_ws/src/labs/air_lab2': PYTHONPATH=/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/prefix_override:/home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab2 build --build-base /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/build install --record /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/install.log --single-version-externally-managed
+[4.417s] running egg_info
+[4.427s] creating ../build/air_lab2/air_lab2.egg-info
+[4.427s] writing ../build/air_lab2/air_lab2.egg-info/PKG-INFO
+[4.432s] writing dependency_links to ../build/air_lab2/air_lab2.egg-info/dependency_links.txt
+[4.434s] writing entry points to ../build/air_lab2/air_lab2.egg-info/entry_points.txt
+[4.436s] writing requirements to ../build/air_lab2/air_lab2.egg-info/requires.txt
+[4.438s] writing top-level names to ../build/air_lab2/air_lab2.egg-info/top_level.txt
+[4.442s] writing manifest file '../build/air_lab2/air_lab2.egg-info/SOURCES.txt'
+[6.866s] writing manifest file '../build/air_lab2/air_lab2.egg-info/SOURCES.txt'
+[6.868s] running build
+[6.868s] running build_py
+[6.872s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/build
+[6.877s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/build/lib
+[6.878s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/build/lib/air_lab2
+[6.880s] copying air_lab2/random_exploration.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/build/lib/air_lab2
+[6.905s] copying air_lab2/lab2_node.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/build/lib/air_lab2
+[6.915s] copying air_lab2/__init__.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/build/lib/air_lab2
+[6.915s] running install
+[6.923s] running install_lib
+[6.927s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/python3.8/site-packages/air_lab2
+[6.928s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/build/lib/air_lab2/__init__.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/python3.8/site-packages/air_lab2
+[6.930s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/build/lib/air_lab2/lab2_node.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/python3.8/site-packages/air_lab2
+[6.934s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/build/lib/air_lab2/random_exploration.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/python3.8/site-packages/air_lab2
+[6.939s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/python3.8/site-packages/air_lab2/__init__.py to __init__.cpython-38.pyc
+[6.956s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/python3.8/site-packages/air_lab2/lab2_node.py to lab2_node.cpython-38.pyc
+[6.962s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/python3.8/site-packages/air_lab2/random_exploration.py to random_exploration.cpython-38.pyc
+[6.986s] running install_data
+[6.989s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/share/ament_index
+[6.989s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/share/ament_index/resource_index
+[6.990s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/share/ament_index/resource_index/packages
+[7.002s] copying resource/air_lab2 -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/share/ament_index/resource_index/packages
+[7.008s] copying package.xml -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/share/air_lab2
+[7.008s] running install_egg_info
+[7.008s] Copying ../build/air_lab2/air_lab2.egg-info to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/python3.8/site-packages/air_lab2-0.0.0-py3.8.egg-info
+[7.046s] running install_scripts
+[7.075s] Installing lab2_node script to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/air_lab2
+[7.078s] Installing random_exploration script to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/air_lab2
+[7.081s] writing list of installed files to '/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/install.log'
+[7.131s] Invoked command in '/home/matge373/TDDE05/ros2_ws/src/labs/air_lab2' returned '0': PYTHONPATH=/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/prefix_override:/home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab2 build --build-base /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/build install --record /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab2/install.log --single-version-externally-managed

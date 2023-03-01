@@ -1,0 +1,34 @@
+[3.510s] Invoking command in '/home/matge373/TDDE05/ros2_ws/src/labs/air_lab_common': PYTHONPATH=/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/prefix_override:/home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab_common build --build-base /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/build install --record /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/install.log --single-version-externally-managed
+[4.266s] running egg_info
+[4.269s] creating ../build/air_lab_common/air_lab_common.egg-info
+[4.270s] writing ../build/air_lab_common/air_lab_common.egg-info/PKG-INFO
+[4.276s] writing dependency_links to ../build/air_lab_common/air_lab_common.egg-info/dependency_links.txt
+[4.278s] writing entry points to ../build/air_lab_common/air_lab_common.egg-info/entry_points.txt
+[4.280s] writing requirements to ../build/air_lab_common/air_lab_common.egg-info/requires.txt
+[4.281s] writing top-level names to ../build/air_lab_common/air_lab_common.egg-info/top_level.txt
+[4.286s] writing manifest file '../build/air_lab_common/air_lab_common.egg-info/SOURCES.txt'
+[6.517s] writing manifest file '../build/air_lab_common/air_lab_common.egg-info/SOURCES.txt'
+[6.520s] running build
+[6.520s] running build_py
+[6.522s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/build
+[6.522s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/build/lib
+[6.524s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/build/lib/air_lab_common
+[6.525s] copying air_lab_common/__init__.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/build/lib/air_lab_common
+[6.531s] running install
+[6.532s] running install_lib
+[6.538s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/lib/python3.8/site-packages/air_lab_common
+[6.540s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/build/lib/air_lab_common/__init__.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/lib/python3.8/site-packages/air_lab_common
+[6.547s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/lib/python3.8/site-packages/air_lab_common/__init__.py to __init__.cpython-38.pyc
+[6.553s] running install_data
+[6.556s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/share/ament_index
+[6.556s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/share/ament_index/resource_index
+[6.557s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/share/ament_index/resource_index/packages
+[6.558s] copying resource/air_lab_common -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/share/ament_index/resource_index/packages
+[6.562s] copying package.xml -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/share/air_lab_common
+[6.567s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/share/air_lab_common/screen
+[6.573s] copying screen/screen.tdde05 -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/share/air_lab_common/screen
+[6.576s] running install_egg_info
+[6.579s] Copying ../build/air_lab_common/air_lab_common.egg-info to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/lib/python3.8/site-packages/air_lab_common-0.0.0-py3.8.egg-info
+[6.614s] running install_scripts
+[6.652s] writing list of installed files to '/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/install.log'
+[6.693s] Invoked command in '/home/matge373/TDDE05/ros2_ws/src/labs/air_lab_common' returned '0': PYTHONPATH=/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/prefix_override:/home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab_common build --build-base /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/build install --record /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab_common/install.log --single-version-externally-managed

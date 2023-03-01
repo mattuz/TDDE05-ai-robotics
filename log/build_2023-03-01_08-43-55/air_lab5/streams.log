@@ -1,0 +1,37 @@
+[3.612s] Invoking command in '/home/matge373/TDDE05/ros2_ws/src/labs/air_lab5': PYTHONPATH=/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/prefix_override:/home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab5 build --build-base /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build install --record /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/install.log --single-version-externally-managed
+[4.409s] running egg_info
+[4.410s] creating ../build/air_lab5/air_lab5.egg-info
+[4.417s] writing ../build/air_lab5/air_lab5.egg-info/PKG-INFO
+[4.423s] writing dependency_links to ../build/air_lab5/air_lab5.egg-info/dependency_links.txt
+[4.425s] writing entry points to ../build/air_lab5/air_lab5.egg-info/entry_points.txt
+[4.427s] writing requirements to ../build/air_lab5/air_lab5.egg-info/requires.txt
+[4.429s] writing top-level names to ../build/air_lab5/air_lab5.egg-info/top_level.txt
+[4.433s] writing manifest file '../build/air_lab5/air_lab5.egg-info/SOURCES.txt'
+[6.552s] reading manifest file '../build/air_lab5/air_lab5.egg-info/SOURCES.txt'
+[6.559s] writing manifest file '../build/air_lab5/air_lab5.egg-info/SOURCES.txt'
+[6.561s] running build
+[6.562s] running build_py
+[6.566s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build
+[6.567s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib
+[6.568s] creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5
+[6.570s] copying air_lab5/lab5_node.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5
+[6.573s] copying air_lab5/__init__.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5
+[6.576s] running install
+[6.577s] running install_lib
+[6.586s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5
+[6.587s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5/lab5_node.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5
+[6.591s] copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5/__init__.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5
+[6.598s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5/lab5_node.py to lab5_node.cpython-38.pyc
+[6.605s] byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5/__init__.py to __init__.cpython-38.pyc
+[6.609s] running install_data
+[6.611s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/share/ament_index
+[6.611s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/share/ament_index/resource_index
+[6.613s] creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/share/ament_index/resource_index/packages
+[6.615s] copying resource/air_lab5 -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/share/ament_index/resource_index/packages
+[6.623s] copying package.xml -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/share/air_lab5
+[6.626s] running install_egg_info
+[6.629s] Copying ../build/air_lab5/air_lab5.egg-info to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5-0.0.0-py3.8.egg-info
+[6.669s] running install_scripts
+[6.708s] Installing lab5_node script to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/air_lab5
+[6.712s] writing list of installed files to '/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/install.log'
+[6.856s] Invoked command in '/home/matge373/TDDE05/ros2_ws/src/labs/air_lab5' returned '0': PYTHONPATH=/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/prefix_override:/home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab5 build --build-base /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build install --record /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/install.log --single-version-externally-managed

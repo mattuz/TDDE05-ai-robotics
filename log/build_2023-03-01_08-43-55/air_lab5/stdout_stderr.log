@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/air_lab5/air_lab5.egg-info
+writing ../build/air_lab5/air_lab5.egg-info/PKG-INFO
+writing dependency_links to ../build/air_lab5/air_lab5.egg-info/dependency_links.txt
+writing entry points to ../build/air_lab5/air_lab5.egg-info/entry_points.txt
+writing requirements to ../build/air_lab5/air_lab5.egg-info/requires.txt
+writing top-level names to ../build/air_lab5/air_lab5.egg-info/top_level.txt
+writing manifest file '../build/air_lab5/air_lab5.egg-info/SOURCES.txt'
+reading manifest file '../build/air_lab5/air_lab5.egg-info/SOURCES.txt'
+writing manifest file '../build/air_lab5/air_lab5.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build
+creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib
+creating /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5
+copying air_lab5/lab5_node.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5
+copying air_lab5/__init__.py -> /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5
+running install
+running install_lib
+creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5
+copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5/lab5_node.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5
+copying /home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5/__init__.py -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5
+byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5/lab5_node.py to lab5_node.cpython-38.pyc
+byte-compiling /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/share/ament_index
+creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/share/ament_index/resource_index
+creating /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/share/ament_index/resource_index/packages
+copying resource/air_lab5 -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/share/ament_index/resource_index/packages
+copying package.xml -> /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/share/air_lab5
+running install_egg_info
+Copying ../build/air_lab5/air_lab5.egg-info to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5-0.0.0-py3.8.egg-info
+running install_scripts
+Installing lab5_node script to /home/matge373/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/air_lab5
+writing list of installed files to '/home/matge373/TDDE05/ros2_ws/src/labs/build/air_lab5/install.log'
