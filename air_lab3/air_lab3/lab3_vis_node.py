@@ -66,7 +66,6 @@ def timer_callback():
     query_req.query = sql_msg
     future = query_client.call_async(query_req)
     executor.spin_until_future_complete(future)
-
     data = json.loads(future.result().result)
 
     for row in data['results']['bindings']:
