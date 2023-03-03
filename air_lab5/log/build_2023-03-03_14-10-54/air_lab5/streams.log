@@ -1,0 +1,42 @@
+[1.179s] Invoking command in '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5': PYTHONPATH=/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/prefix_override:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/air_lab5 build --build-base /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build install --record /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/install.log --single-version-externally-managed
+[1.555s] running egg_info
+[1.556s] creating build/air_lab5/air_lab5.egg-info
+[1.557s] writing build/air_lab5/air_lab5.egg-info/PKG-INFO
+[1.562s] writing dependency_links to build/air_lab5/air_lab5.egg-info/dependency_links.txt
+[1.565s] writing entry points to build/air_lab5/air_lab5.egg-info/entry_points.txt
+[1.567s] writing requirements to build/air_lab5/air_lab5.egg-info/requires.txt
+[1.568s] writing top-level names to build/air_lab5/air_lab5.egg-info/top_level.txt
+[1.572s] writing manifest file 'build/air_lab5/air_lab5.egg-info/SOURCES.txt'
+[4.225s] writing manifest file 'build/air_lab5/air_lab5.egg-info/SOURCES.txt'
+[4.227s] running build
+[4.227s] running build_py
+[4.228s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build
+[4.228s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build/lib
+[4.229s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build/lib/air_lab5
+[4.230s] copying air_lab5/Decision.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build/lib/air_lab5
+[4.234s] copying air_lab5/__init__.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build/lib/air_lab5
+[4.237s] copying air_lab5/text_to_goals.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build/lib/air_lab5
+[4.240s] copying air_lab5/lab5_node.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build/lib/air_lab5
+[4.244s] running install
+[4.246s] running install_lib
+[4.249s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages/air_lab5
+[4.251s] copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build/lib/air_lab5/lab5_node.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages/air_lab5
+[4.255s] copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build/lib/air_lab5/__init__.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages/air_lab5
+[4.258s] copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build/lib/air_lab5/Decision.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages/air_lab5
+[4.263s] copying /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build/lib/air_lab5/text_to_goals.py -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages/air_lab5
+[4.268s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages/air_lab5/lab5_node.py to lab5_node.cpython-38.pyc
+[4.277s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages/air_lab5/__init__.py to __init__.cpython-38.pyc
+[4.283s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages/air_lab5/Decision.py to Decision.cpython-38.pyc
+[4.293s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages/air_lab5/text_to_goals.py to text_to_goals.cpython-38.pyc
+[4.298s] running install_data
+[4.300s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/share/ament_index
+[4.301s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/share/ament_index/resource_index
+[4.302s] creating /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/share/ament_index/resource_index/packages
+[4.305s] copying resource/air_lab5 -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/share/ament_index/resource_index/packages
+[4.310s] copying package.xml -> /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/share/air_lab5
+[4.314s] running install_egg_info
+[4.318s] Copying build/air_lab5/air_lab5.egg-info to /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages/air_lab5-0.0.0-py3.8.egg-info
+[4.363s] running install_scripts
+[4.403s] Installing lab5_node script to /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/air_lab5
+[4.406s] writing list of installed files to '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/install.log'
+[4.431s] Invoked command in '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5' returned '0': PYTHONPATH=/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/prefix_override:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/air_lab5 build --build-base /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/build install --record /home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/build/air_lab5/install.log --single-version-externally-managed

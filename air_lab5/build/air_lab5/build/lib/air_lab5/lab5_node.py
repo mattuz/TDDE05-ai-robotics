@@ -1,6 +1,5 @@
-from air_lab_interfaces.srv import ExecuteTst
 from air_lab_interfaces.msg import Goal
-
+from air_lab_interfaces.srv import ExecuteTst
 import std_srvs.srv
 
 import rclpy
