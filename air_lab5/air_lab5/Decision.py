@@ -23,16 +23,13 @@ class MinimalClientAsync(Node):
 
 
 def main():
-    global display_marker_pub
     rclpy.init()
-    node = rclpy.node.Node('visualise_semantic_objects')
+    node = rclpy.node.Node('Decision_node')
 
-    display_marker_pub = node.create_publisher(visualization_msgs.msg.MarkerArray, 'semantic_sensor_visualisation', 10)
+    decision_pub = node.create_publisher(std_msgs.string, 'text_command', 10)
     timer = node.create_timer(0.5, timer_callback)
 
     rclpy.spin(node)
-
-
 
     rclpy.init()
 
