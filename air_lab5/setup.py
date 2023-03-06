@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'lab5_node = air_lab5.lab5_node:main'
+            'decision = air_lab5.decision:main',
+            'text_to_goals = air_lab5.text_to_goals:main'
         ],
     },
 )
