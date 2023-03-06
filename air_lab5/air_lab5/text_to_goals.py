@@ -21,6 +21,7 @@ class MinimalSubscriber(Node):
         self.publisher = self.create_publisher(GoalsRequest, 
                                             'goals_request',
                                             10)
+        print("Finish init")
 
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
@@ -33,10 +34,10 @@ class MinimalSubscriber(Node):
 
         # fixa in en bryt för "and" eller ", " för att hantera flera goals
         if type == "Goto":
-            object = words[1]
-            destination = words[2]
+            destination = words[1]
         elif type == "Bring":
             object = words[1]
+            destination = "User"
         elif type == "Explore!":
             pass
 
