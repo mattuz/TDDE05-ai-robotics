@@ -1,44 +1,44 @@
 import sys
 
-from air_lab_interfaces.srv import tst_executor
 import rclpy
 from rclpy.node import Node
+from air_lab_interfaces.msg import GoalsRequest
+
+# Ugly hack to get a new name for each node
+ros_name_counter = 0
+def gen_name(name):
+    global ros_name_counter
+    ros_name_counter += 1
+    return name + str(ros_name_counter)
 
 
 class MinimalClientAsync(Node):
 
     def __init__(self):
         super().__init__('minimal_client_async')
-        self.cli = self.create_client(AddTwoInts, 'add_two_ints')
-        while not self.cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('service not available, waiting again...')
-        self.req = AddTwoInts.Request()
 
-    def send_request(self, a, b):
-        self.req.a = a
-        self.req.b = b
-        self.future = self.cli.call_async(self.req)
-        rclpy.spin_until_future_complete(self, self.future)
-        return self.future.result()
+        self.drive_to_node = Node(gen_name("drive_to_node"))
+
+        self.subscription = self.create_subscription(
+            GoalsRequest,
+            'goals_request',
+            self.listener_callback,
+            10)
+
+    def listener_callback(self, msg):
+        self.get_logger().info('I heard: "%s"' % msg.data)
 
 
 def main():
     rclpy.init()
-    node = rclpy.node.Node('Decision_node')
-
-    decision_pub = node.create_publisher(std_msgs.string, 'text_command', 10)
-    timer = node.create_timer(0.5, timer_callback)
-
-    rclpy.spin(node)
-
-    rclpy.init()
 
     minimal_client = MinimalClientAsync()
-    response = minimal_client.send_request(int(sys.argv[1]), int(sys.argv[2]))
-    minimal_client.get_logger().info(
-        'Result of add_two_ints: for %d + %d = %d' %
-        (int(sys.argv[1]), int(sys.argv[2]), response.sum))
 
+    rclpy.spin(minimal_client)
+
+    # Destroy the node explicitly
+    # (optional - otherwise it will be done automatically
+    # when the garbage collector destroys the node object)
     minimal_client.destroy_node()
     rclpy.shutdown()
 

@@ -22,6 +22,8 @@ if(BUILD_TESTING)
 endif()
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ExecuteTst.srv"
+  "msg/Goal.msg"
+  "msg/GoalsRequest.msg"
 )
 
 ament_package()
