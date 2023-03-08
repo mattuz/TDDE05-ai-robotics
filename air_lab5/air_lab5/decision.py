@@ -3,6 +3,8 @@ import rclpy.executors
 import threading
 import json
 
+from nav_msgs.msg import Odometry
+
 import rclpy
 from rclpy.node import Node
 from air_lab_interfaces.msg import GoalsRequest
@@ -29,6 +31,11 @@ class MinimalClientAsync(Node):
             self.listener_callback,
             10)
         
+        self.odom_sub = self.create_subscription(Odometry, "/odom", self.odom_callback, 2)
+
+        self.botx = 0
+        self.boty = 0
+        
         self.executor_ = rclpy.executors.MultiThreadedExecutor()
         self.query_node = Node(gen_name('query_node'))
         self.query_client = self.query_node.create_client(QueryDatabase, '/kdb_server/sparql_query')
@@ -42,7 +49,12 @@ class MinimalClientAsync(Node):
         self.thread.start()
         print("Finish init")
 
+    def odom_callback(self, msg):
+        self.botx = msg.pose.pose.position.x
+        self.boty = msg.pose.pose.position.y
+
     def listener_callback(self, msg):
+        global file_counter
         self.get_logger().info('I heard: "%s"' % msg)
 
         find_this = ""
@@ -71,36 +83,60 @@ class MinimalClientAsync(Node):
             if row['tags']['value'] == find_this:
                 x = row['x']['value']
                 y = row['y']['value']
-                break
+                print("Found target in DB")
         
-        if x and y:
+        if single_command.type=="Goto" and x!=False and y!=False:
             data_ = {"children": [],"common_params": {},"name": "seq","params": {}}
             child = {"children": [],"common_params": {},"name": "drive-to","params": {"p": {"rostype": "Point","x": x,"y": y,"z": 0}}}
             data_['children'].append(child)
             json_data = json.dumps(data_)
-            global file_counter
             path = os.path.join(os.getcwd(), f"goals/drive-to-{file_counter}.json")
             with open(f"goals/drive-to-{file_counter}.json", "w") as outfile:
                 outfile.write(json_data)
             file_counter += 1
 
             tst_req = ExecuteTst.Request()
-            print("req created")
-            breakpoint()
             tst_req.tst_file = path
-            print("req tst_file")
-            breakpoint()
             future = self.drive_client.call_async(tst_req)
             print("future assigned")
-            breakpoint()
             self.executor_.spin_until_future_complete(future)
             print("spin finish")
-            breakpoint()
-            data = json.loads(future.result().result)
-            print("data loaded")
-            breakpoint()
-            
 
+        elif single_command.type=="Bring" and x!=False and y!=False:
+            data_ = {"children": [],"common_params": {},"name": "seq","params": {}}
+            child_coffe = {"children": [],"common_params": {},"name": "drive-to","params": {"p": {"rostype": "Point","x": x,"y": y,"z": 0}}}
+            child_back = {"children": [],"common_params": {},"name": "drive-to","params": {"p": {"rostype": "Point","x": self.botx,"y": self.boty,"z": 0}}}
+            data_['children'].append(child_coffe)
+            data_['children'].append(child_back)
+            json_data = json.dumps(data_)
+            path = os.path.join(os.getcwd(), f"goals/drive-to-{file_counter}.json")
+            with open(f"goals/drive-to-{file_counter}.json", "w") as outfile:
+                outfile.write(json_data)
+            file_counter += 1
+
+            tst_req = ExecuteTst.Request()
+            tst_req.tst_file = path
+            future = self.drive_client.call_async(tst_req)
+            print("future assigned")
+            self.executor_.spin_until_future_complete(future)
+            print("spin finish")
+
+        elif single_command.type=="Explore!":
+            data_ = {"children": [],"common_params": {},"name": "seq","params": {}}
+            child = {"children": [],"common_params": {},"name": "explore","params": {'radius':2, 'a':0, 'b':1}}
+            data_['children'].append(child)
+            json_data = json.dumps(data_)
+            path = os.path.join(os.getcwd(), f"goals/drive-to-{file_counter}.json")
+            with open(f"goals/drive-to-{file_counter}.json", "w") as outfile:
+                outfile.write(json_data)
+            file_counter += 1
+
+            tst_req = ExecuteTst.Request()
+            tst_req.tst_file = path
+            future = self.drive_client.call_async(tst_req)
+            print("future assigned")
+            self.executor_.spin_until_future_complete(future)
+            print("spin finish")
 
 
 
