@@ -1,0 +1,28 @@
+[19.405s] Invoking command in '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5': AMENT_PREFIX_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab5/prefix_override:/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages:/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab5 build --build-base /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab5/build install --record /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab5/install.log --single-version-externally-managed
+[24.482s] running egg_info
+[24.486s] writing ../build/air_lab5/air_lab5.egg-info/PKG-INFO
+[24.491s] writing dependency_links to ../build/air_lab5/air_lab5.egg-info/dependency_links.txt
+[24.496s] writing entry points to ../build/air_lab5/air_lab5.egg-info/entry_points.txt
+[24.501s] writing requirements to ../build/air_lab5/air_lab5.egg-info/requires.txt
+[24.503s] writing top-level names to ../build/air_lab5/air_lab5.egg-info/top_level.txt
+[39.420s] writing manifest file '../build/air_lab5/air_lab5.egg-info/SOURCES.txt'
+[39.423s] running build
+[39.423s] running build_py
+[39.440s] copying air_lab5/text_to_goals.py -> /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5
+[39.458s] copying air_lab5/decision.py -> /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5
+[39.469s] running install
+[39.498s] running install_lib
+[39.521s] copying /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5/decision.py -> /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5
+[39.568s] copying /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab5/build/lib/air_lab5/text_to_goals.py -> /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5
+[39.614s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5/decision.py to decision.cpython-38.pyc
+[39.651s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5/text_to_goals.py to text_to_goals.cpython-38.pyc
+[39.684s] running install_data
+[39.702s] copying package.xml -> /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab5/share/air_lab5
+[39.713s] running install_egg_info
+[39.717s] removing '/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5-0.0.0-py3.8.egg-info' (and everything under it)
+[39.775s] Copying ../build/air_lab5/air_lab5.egg-info to /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages/air_lab5-0.0.0-py3.8.egg-info
+[39.947s] running install_scripts
+[40.202s] Installing decision script to /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/air_lab5
+[40.214s] Installing text_to_goals script to /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/air_lab5
+[40.224s] writing list of installed files to '/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab5/install.log'
+[40.257s] Invoked command in '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5' returned '0': AMENT_PREFIX_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab5/prefix_override:/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab5/lib/python3.8/site-packages:/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab5 build --build-base /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab5/build install --record /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab5/install.log --single-version-externally-managed

@@ -1,0 +1,25 @@
+[19.392s] Invoking command in '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab3': AMENT_PREFIX_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab3/prefix_override:/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages:/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab3 build --build-base /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab3/build install --record /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab3/install.log --single-version-externally-managed
+[24.499s] running egg_info
+[24.503s] writing ../build/air_lab3/air_lab3.egg-info/PKG-INFO
+[24.507s] writing dependency_links to ../build/air_lab3/air_lab3.egg-info/dependency_links.txt
+[24.511s] writing entry points to ../build/air_lab3/air_lab3.egg-info/entry_points.txt
+[24.514s] writing requirements to ../build/air_lab3/air_lab3.egg-info/requires.txt
+[24.517s] writing top-level names to ../build/air_lab3/air_lab3.egg-info/top_level.txt
+[38.957s] writing manifest file '../build/air_lab3/air_lab3.egg-info/SOURCES.txt'
+[38.960s] running build
+[38.960s] running build_py
+[39.011s] copying air_lab3/lab3_vis_node.py -> /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3
+[39.059s] running install
+[39.089s] running install_lib
+[39.116s] copying /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab3/build/lib/air_lab3/lab3_vis_node.py -> /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3
+[39.275s] byte-compiling /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3/lab3_vis_node.py to lab3_vis_node.cpython-38.pyc
+[39.367s] running install_data
+[39.388s] running install_egg_info
+[39.393s] removing '/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3-0.0.0-py3.8.egg-info' (and everything under it)
+[39.444s] Copying ../build/air_lab3/air_lab3.egg-info to /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages/air_lab3-0.0.0-py3.8.egg-info
+[39.607s] running install_scripts
+[39.817s] Installing lab3_node script to /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/air_lab3
+[39.827s] Installing lab3_vis_node script to /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/air_lab3
+[39.839s] Installing tst_executor script to /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/air_lab3
+[39.851s] writing list of installed files to '/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab3/install.log'
+[39.896s] Invoked command in '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab3' returned '0': AMENT_PREFIX_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab3/prefix_override:/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab3/lib/python3.8/site-packages:/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab3 build --build-base /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab3/build install --record /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab3/install.log --single-version-externally-managed

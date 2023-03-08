@@ -35,7 +35,7 @@ class MinimalClientAsync(Node):
         self.executor_.add_node(self.query_node)
 
         self.drive_node = Node(gen_name('tst_node'))
-        self.drive_client = self.drive_node.create_client(ExecuteTst, '/air_lab_interfaces/srv/ExecuteTst')
+        self.drive_client = self.drive_node.create_client(ExecuteTst, '/execute_tst')
         self.executor_.add_node(self.drive_node)
 
         self.thread = threading.Thread(target=self.executor_.spin)
@@ -85,11 +85,20 @@ class MinimalClientAsync(Node):
             file_counter += 1
 
             tst_req = ExecuteTst.Request()
+            print("req created")
+            breakpoint()
             tst_req.tst_file = path
+            print("req tst_file")
+            breakpoint()
             future = self.drive_client.call_async(tst_req)
+            print("future assigned")
+            breakpoint()
             self.executor_.spin_until_future_complete(future)
+            print("spin finish")
             breakpoint()
             data = json.loads(future.result().result)
+            print("data loaded")
+            breakpoint()
             
 
 

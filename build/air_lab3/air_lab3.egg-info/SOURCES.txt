@@ -21,9 +21,14 @@ air_lab3/harass_humans.json
 air_lab3/lab3_node.py
 air_lab3/lab3_vis_node.py
 air_lab3/tst_executor.py
-air_lab_interfaces/CMakeLists.txt
-air_lab_interfaces/package.xml
-air_lab_interfaces/srv/ExecuteTst.srv
+air_lab3/__pycache__/DockExecutor.cpython-38.pyc
+air_lab3/__pycache__/DriveToExecutor.cpython-38.pyc
+air_lab3/__pycache__/ExploreExecutor.cpython-38.pyc
+air_lab3/__pycache__/GenerateHumans.cpython-38.pyc
+air_lab3/__pycache__/RecordSemantic.cpython-38.pyc
+air_lab3/__pycache__/UndockExecutor.cpython-38.pyc
+air_lab3/__pycache__/__init__.cpython-38.pyc
+air_lab3/__pycache__/lab3_node.cpython-38.pyc
 build/.built_by
 build/COLCON_IGNORE
 build/air_lab3/colcon_build.rc

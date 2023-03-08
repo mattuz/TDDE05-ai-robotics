@@ -1,0 +1,237 @@
+[1.151s] Invoking command in '/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antel460/TDDE05/ros2_ws/install/air_lab5:/home/antel460/TDDE05/ros2_ws/install/air_lab3:/home/antel460/TDDE05/ros2_ws/install/air_lab_common:/home/antel460/TDDE05/ros2_ws/install/air_lab2:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2:/courses/TDDE05/software/ros2_ws/install/air_tsts:/courses/TDDE05/software/ros2_ws/install/air_simple_sim:/courses/TDDE05/software/ros2_ws/install/air_bringup:/opt/ros/galactic /usr/bin/cmake /home/antel460/TDDE05/ros2_ws/src/labs/air_lab_interfaces -DCMAKE_INSTALL_PREFIX=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces
+[6.207s] -- The C compiler identification is GNU 9.4.0
+[6.207s] -- The CXX compiler identification is GNU 9.4.0
+[6.430s] -- Check for working C compiler: /usr/bin/cc
+[10.676s] -- Check for working C compiler: /usr/bin/cc -- works
+[10.693s] -- Detecting C compiler ABI info
+[15.214s] -- Detecting C compiler ABI info - done
+[15.276s] -- Detecting C compile features
+[15.277s] -- Detecting C compile features - done
+[15.341s] -- Check for working CXX compiler: /usr/bin/c++
+[18.823s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[18.831s] -- Detecting CXX compiler ABI info
+[22.420s] -- Detecting CXX compiler ABI info - done
+[22.474s] -- Detecting CXX compile features
+[22.475s] -- Detecting CXX compile features - done
+[23.063s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[25.482s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[25.482s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[34.413s] -- Found std_msgs: 2.2.4 (/opt/ros/galactic/share/std_msgs/cmake)
+[38.284s] -- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+[39.728s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[41.144s] -- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+[42.525s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[43.948s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[55.523s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[59.483s] -- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+[60.457s] -- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+[62.125s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[62.598s] -- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+[65.050s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[65.050s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[65.051s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[65.051s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[66.705s] -- Found PythonExtra: .so  
+[69.468s] -- Added test 'copyright' to check source files copyright and LICENSE
+[70.084s] -- Added test 'lint_cmake' to check CMake code style
+[70.465s] -- Added test 'xmllint' to check XML markup files
+[71.627s] -- Configuring done
+[74.563s] -- Generating done
+[74.811s] -- Build files have been written to: /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_interfaces
+[74.820s] Invoked command in '/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antel460/TDDE05/ros2_ws/install/air_lab5:/home/antel460/TDDE05/ros2_ws/install/air_lab3:/home/antel460/TDDE05/ros2_ws/install/air_lab_common:/home/antel460/TDDE05/ros2_ws/install/air_lab2:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2:/courses/TDDE05/software/ros2_ws/install/air_tsts:/courses/TDDE05/software/ros2_ws/install/air_simple_sim:/courses/TDDE05/software/ros2_ws/install/air_bringup:/opt/ros/galactic /usr/bin/cmake /home/antel460/TDDE05/ros2_ws/src/labs/air_lab_interfaces -DCMAKE_INSTALL_PREFIX=/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces
+[74.831s] Invoking command in '/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antel460/TDDE05/ros2_ws/install/air_lab5:/home/antel460/TDDE05/ros2_ws/install/air_lab3:/home/antel460/TDDE05/ros2_ws/install/air_lab_common:/home/antel460/TDDE05/ros2_ws/install/air_lab2:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2:/courses/TDDE05/software/ros2_ws/install/air_tsts:/courses/TDDE05/software/ros2_ws/install/air_simple_sim:/courses/TDDE05/software/ros2_ws/install/air_bringup:/opt/ros/galactic /usr/bin/cmake --build /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_interfaces -- -j4 -l4
+[77.939s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[77.952s] [35m[1mScanning dependencies of target air_lab_interfaces__cpp[0m
+[78.823s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[87.420s] [35m[1mScanning dependencies of target air_lab_interfaces__rosidl_generator_c[0m
+[87.862s] [  5%] Built target air_lab_interfaces__cpp
+[88.372s] [  8%] [32mBuilding C object CMakeFiles/air_lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/air_lab_interfaces/srv/detail/execute_tst__functions.c.o[0m
+[89.891s] [ 11%] [32mBuilding C object CMakeFiles/air_lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/air_lab_interfaces/msg/detail/goals_request__functions.c.o[0m
+[91.459s] [ 14%] [32mBuilding C object CMakeFiles/air_lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/air_lab_interfaces/msg/detail/goal__functions.c.o[0m
+[93.087s] [ 17%] [32m[1mLinking C shared library libair_lab_interfaces__rosidl_generator_c.so[0m
+[95.038s] [ 17%] Built target air_lab_interfaces__rosidl_generator_c
+[95.885s] [ 20%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[103.378s] [35m[1mScanning dependencies of target air_lab_interfaces__rosidl_typesupport_introspection_cpp[0m
+[104.340s] [ 22%] [32mBuilding CXX object CMakeFiles/air_lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/air_lab_interfaces/srv/detail/execute_tst__type_support.cpp.o[0m
+[104.372s] [ 25%] [32mBuilding CXX object CMakeFiles/air_lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/air_lab_interfaces/msg/detail/goal__type_support.cpp.o[0m
+[106.571s] [ 28%] [32mBuilding CXX object CMakeFiles/air_lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/air_lab_interfaces/msg/detail/goals_request__type_support.cpp.o[0m
+[108.722s] [ 31%] [32m[1mLinking CXX shared library libair_lab_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[110.704s] [ 31%] Built target air_lab_interfaces__rosidl_typesupport_introspection_cpp
+[111.459s] [ 34%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[111.488s] [ 37%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[115.537s] [35m[1mScanning dependencies of target air_lab_interfaces__rosidl_typesupport_cpp[0m
+[116.487s] [ 42%] [32mBuilding CXX object CMakeFiles/air_lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/air_lab_interfaces/srv/execute_tst__type_support.cpp.o[0m
+[116.487s] [ 42%] [32mBuilding CXX object CMakeFiles/air_lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/air_lab_interfaces/msg/goal__type_support.cpp.o[0m
+[116.720s] [35m[1mScanning dependencies of target air_lab_interfaces__rosidl_typesupport_introspection_c[0m
+[117.643s] [ 45%] [32mBuilding C object CMakeFiles/air_lab_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/air_lab_interfaces/srv/detail/execute_tst__type_support.c.o[0m
+[118.715s] [ 51%] [32mBuilding CXX object CMakeFiles/air_lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/air_lab_interfaces/msg/goals_request__type_support.cpp.o[0m
+[118.716s] [ 51%] [32mBuilding C object CMakeFiles/air_lab_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/air_lab_interfaces/msg/detail/goal__type_support.c.o[0m
+[120.156s] [ 54%] [32mBuilding C object CMakeFiles/air_lab_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/air_lab_interfaces/msg/detail/goals_request__type_support.c.o[0m
+[121.153s] [ 57%] [32m[1mLinking CXX shared library libair_lab_interfaces__rosidl_typesupport_cpp.so[0m
+[121.833s] [ 60%] [32m[1mLinking C shared library libair_lab_interfaces__rosidl_typesupport_introspection_c.so[0m
+[122.816s] [ 60%] Built target air_lab_interfaces__rosidl_typesupport_cpp
+[123.677s] [ 60%] Built target air_lab_interfaces__rosidl_typesupport_introspection_c
+[124.680s] [ 62%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[129.331s] [35m[1mScanning dependencies of target air_lab_interfaces__rosidl_typesupport_c[0m
+[130.275s] [ 68%] [32mBuilding CXX object CMakeFiles/air_lab_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/air_lab_interfaces/msg/goal__type_support.cpp.o[0m
+[130.277s] [ 68%] [32mBuilding CXX object CMakeFiles/air_lab_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/air_lab_interfaces/srv/execute_tst__type_support.cpp.o[0m
+[131.724s] [ 71%] [32mBuilding CXX object CMakeFiles/air_lab_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/air_lab_interfaces/msg/goals_request__type_support.cpp.o[0m
+[133.288s] [ 74%] [32m[1mLinking CXX shared library libair_lab_interfaces__rosidl_typesupport_c.so[0m
+[135.148s] [ 74%] Built target air_lab_interfaces__rosidl_typesupport_c
+[135.987s] [35m[1mScanning dependencies of target air_lab_interfaces[0m
+[136.984s] [ 74%] Built target air_lab_interfaces
+[137.972s] [35m[1mScanning dependencies of target air_lab_interfaces__py[0m
+[138.963s] [ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[149.727s] [ 77%] Built target air_lab_interfaces__py
+[150.666s] [35m[1mScanning dependencies of target air_lab_interfaces__python[0m
+[151.680s] [ 80%] [32mBuilding C object CMakeFiles/air_lab_interfaces__python.dir/rosidl_generator_py/air_lab_interfaces/srv/_execute_tst_s.c.o[0m
+[153.862s] [ 82%] [32mBuilding C object CMakeFiles/air_lab_interfaces__python.dir/rosidl_generator_py/air_lab_interfaces/msg/_goals_request_s.c.o[0m
+[153.882s] [ 85%] [32mBuilding C object CMakeFiles/air_lab_interfaces__python.dir/rosidl_generator_py/air_lab_interfaces/msg/_goal_s.c.o[0m
+[156.116s] [ 88%] [32m[1mLinking C shared library rosidl_generator_py/air_lab_interfaces/libair_lab_interfaces__python.so[0m
+[158.182s] [ 88%] Built target air_lab_interfaces__python
+[159.051s] [35m[1mScanning dependencies of target air_lab_interfaces__rosidl_typesupport_c__pyext[0m
+[159.056s] [35m[1mScanning dependencies of target air_lab_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[159.983s] [ 91%] [32mBuilding C object CMakeFiles/air_lab_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/air_lab_interfaces/_air_lab_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[159.988s] [ 94%] [32mBuilding C object CMakeFiles/air_lab_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/air_lab_interfaces/_air_lab_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[162.253s] [100%] [32m[1mLinking C shared library rosidl_generator_py/air_lab_interfaces/air_lab_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[162.253s] [100%] [32m[1mLinking C shared library rosidl_generator_py/air_lab_interfaces/air_lab_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[164.087s] [100%] Built target air_lab_interfaces__rosidl_typesupport_introspection_c__pyext
+[164.102s] [100%] Built target air_lab_interfaces__rosidl_typesupport_c__pyext
+[164.954s] Invoked command in '/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antel460/TDDE05/ros2_ws/install/air_lab5:/home/antel460/TDDE05/ros2_ws/install/air_lab3:/home/antel460/TDDE05/ros2_ws/install/air_lab_common:/home/antel460/TDDE05/ros2_ws/install/air_lab2:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2:/courses/TDDE05/software/ros2_ws/install/air_tsts:/courses/TDDE05/software/ros2_ws/install/air_simple_sim:/courses/TDDE05/software/ros2_ws/install/air_bringup:/opt/ros/galactic /usr/bin/cmake --build /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_interfaces -- -j4 -l4
+[178.932s] Invoking command in '/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antel460/TDDE05/ros2_ws/install/air_lab5:/home/antel460/TDDE05/ros2_ws/install/air_lab3:/home/antel460/TDDE05/ros2_ws/install/air_lab_common:/home/antel460/TDDE05/ros2_ws/install/air_lab2:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2:/courses/TDDE05/software/ros2_ws/install/air_tsts:/courses/TDDE05/software/ros2_ws/install/air_simple_sim:/courses/TDDE05/software/ros2_ws/install/air_bringup:/opt/ros/galactic /usr/bin/cmake --install /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_interfaces
+[179.622s] -- Install configuration: ""
+[179.654s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/ament_index/resource_index/rosidl_interfaces/air_lab_interfaces
+[179.702s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces
+[179.728s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg
+[179.760s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/goals_request.h
+[179.815s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/rosidl_generator_c__visibility_control.h
+[179.873s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/goal.h
+[179.924s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail
+[179.960s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goals_request__type_support.h
+[180.019s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goals_request__functions.c
+[180.070s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goal__functions.h
+[180.125s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goals_request__functions.h
+[180.184s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goal__type_support.h
+[180.253s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goal__struct.h
+[180.309s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goal__functions.c
+[180.367s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goals_request__struct.h
+[180.425s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv
+[180.460s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail
+[180.506s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail/execute_tst__type_support.h
+[180.563s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail/execute_tst__functions.c
+[180.620s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail/execute_tst__struct.h
+[180.673s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail/execute_tst__functions.h
+[180.725s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/execute_tst.h
+[180.793s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/environment/library_path.sh
+[180.842s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/environment/library_path.dsv
+[180.913s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__rosidl_generator_c.so
+[180.971s] -- Set runtime path of "/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__rosidl_generator_c.so" to ""
+[180.981s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces
+[180.998s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg
+[181.015s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail
+[181.038s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goal__type_support.c
+[181.100s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goal__rosidl_typesupport_introspection_c.h
+[181.171s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goals_request__rosidl_typesupport_introspection_c.h
+[181.238s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goals_request__type_support.c
+[181.298s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[181.345s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv
+[181.362s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail
+[181.379s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail/execute_tst__rosidl_typesupport_introspection_c.h
+[181.438s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail/execute_tst__type_support.c
+[181.496s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__rosidl_typesupport_introspection_c.so
+[181.565s] -- Set runtime path of "/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[181.582s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__rosidl_typesupport_c.so
+[181.640s] -- Set runtime path of "/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__rosidl_typesupport_c.so" to ""
+[181.649s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces
+[181.664s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg
+[181.678s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail
+[181.696s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goals_request__struct.hpp
+[181.744s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goal__struct.hpp
+[181.796s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goals_request__builder.hpp
+[181.848s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goal__traits.hpp
+[181.895s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goal__builder.hpp
+[181.943s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goals_request__traits.hpp
+[181.991s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/goal.hpp
+[182.040s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/goals_request.hpp
+[182.096s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv
+[182.110s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail
+[182.131s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail/execute_tst__struct.hpp
+[182.181s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail/execute_tst__builder.hpp
+[182.249s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail/execute_tst__traits.hpp
+[182.296s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/execute_tst.hpp
+[182.342s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces
+[182.358s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv
+[182.374s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail
+[182.392s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail/execute_tst__type_support.cpp
+[182.444s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/srv/detail/execute_tst__rosidl_typesupport_introspection_cpp.hpp
+[182.490s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg
+[182.505s] -- Up-to-date: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail
+[182.528s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goals_request__rosidl_typesupport_introspection_cpp.hpp
+[182.585s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goal__rosidl_typesupport_introspection_cpp.hpp
+[182.639s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goals_request__type_support.cpp
+[182.705s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/include/air_lab_interfaces/msg/detail/goal__type_support.cpp
+[182.793s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__rosidl_typesupport_introspection_cpp.so
+[182.857s] -- Set runtime path of "/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[182.878s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__rosidl_typesupport_cpp.so
+[182.941s] -- Set runtime path of "/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__rosidl_typesupport_cpp.so" to ""
+[182.955s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/environment/pythonpath.sh
+[183.016s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/environment/pythonpath.dsv
+[183.085s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/__init__.py
+[185.513s] Compiling '/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/__init__.py'...
+[185.527s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/srv
+[185.568s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/srv/_execute_tst.py
+[185.623s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/srv/_execute_tst_s.c
+[185.690s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/srv/__init__.py
+[185.744s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/msg
+[185.782s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/msg/__init__.py
+[185.845s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/msg/_goal_s.c
+[185.900s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/msg/_goals_request.py
+[185.957s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/msg/_goal.py
+[186.022s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/msg/_goals_request_s.c
+[186.075s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/air_lab_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[186.129s] -- Set runtime path of "/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/air_lab_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[186.148s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/air_lab_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[186.205s] -- Set runtime path of "/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/python3.8/site-packages/air_lab_interfaces/air_lab_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[186.225s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__python.so
+[186.292s] -- Set runtime path of "/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/lib/libair_lab_interfaces__python.so" to ""
+[186.328s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/srv/ExecuteTst.idl
+[186.399s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/msg/Goal.idl
+[186.464s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/msg/GoalsRequest.idl
+[186.522s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/srv/ExecuteTst.srv
+[186.584s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/srv/ExecuteTst_Request.msg
+[186.645s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/srv/ExecuteTst_Response.msg
+[186.706s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/msg/Goal.msg
+[186.759s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/msg/GoalsRequest.msg
+[186.834s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/ament_index/resource_index/package_run_dependencies/air_lab_interfaces
+[186.905s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/ament_index/resource_index/parent_prefix_path/air_lab_interfaces
+[186.956s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/environment/ament_prefix_path.sh
+[187.006s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/environment/ament_prefix_path.dsv
+[187.050s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/environment/path.sh
+[187.092s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/environment/path.dsv
+[187.142s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/local_setup.bash
+[187.195s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/local_setup.sh
+[187.260s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/local_setup.zsh
+[187.319s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/local_setup.dsv
+[187.378s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/package.dsv
+[187.459s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/ament_index/resource_index/packages/air_lab_interfaces
+[187.537s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfaces__rosidl_generator_cExport.cmake
+[187.594s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfaces__rosidl_generator_cExport-noconfig.cmake
+[187.678s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[187.734s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[187.787s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfaces__rosidl_typesupport_cExport.cmake
+[187.841s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[187.894s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfaces__rosidl_generator_cppExport.cmake
+[187.950s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[188.002s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[188.056s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfaces__rosidl_typesupport_cppExport.cmake
+[188.108s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[188.159s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/rosidl_cmake-extras.cmake
+[188.212s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[188.282s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[188.338s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[188.392s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[188.446s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[188.504s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfacesConfig.cmake
+[188.562s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/cmake/air_lab_interfacesConfig-version.cmake
+[188.631s] -- Installing: /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_interfaces/share/air_lab_interfaces/package.xml
+[188.692s] Invoked command in '/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/antel460/TDDE05/ros2_ws/install/air_lab5:/home/antel460/TDDE05/ros2_ws/install/air_lab3:/home/antel460/TDDE05/ros2_ws/install/air_lab_common:/home/antel460/TDDE05/ros2_ws/install/air_lab2:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab5/install/air_lab5:/home/antel460/TDDE05/ros2_ws/src/labs/air_lab2/install/air_lab2:/courses/TDDE05/software/ros2_ws/install/air_tsts:/courses/TDDE05/software/ros2_ws/install/air_simple_sim:/courses/TDDE05/software/ros2_ws/install/air_bringup:/opt/ros/galactic /usr/bin/cmake --install /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_interfaces

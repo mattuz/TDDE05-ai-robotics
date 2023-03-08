@@ -1,0 +1,19 @@
+[19.025s] Invoking command in '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab_common': PYTHONPATH=/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_common/prefix_override:/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab_common build --build-base /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_common/build install --record /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_common/install.log --single-version-externally-managed
+[23.793s] running egg_info
+[23.797s] writing ../build/air_lab_common/air_lab_common.egg-info/PKG-INFO
+[23.801s] writing dependency_links to ../build/air_lab_common/air_lab_common.egg-info/dependency_links.txt
+[23.805s] writing entry points to ../build/air_lab_common/air_lab_common.egg-info/entry_points.txt
+[23.808s] writing requirements to ../build/air_lab_common/air_lab_common.egg-info/requires.txt
+[23.810s] writing top-level names to ../build/air_lab_common/air_lab_common.egg-info/top_level.txt
+[38.550s] writing manifest file '../build/air_lab_common/air_lab_common.egg-info/SOURCES.txt'
+[38.552s] running build
+[38.552s] running build_py
+[38.565s] running install
+[38.600s] running install_lib
+[38.654s] running install_data
+[38.677s] running install_egg_info
+[38.684s] removing '/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_common/lib/python3.8/site-packages/air_lab_common-0.0.0-py3.8.egg-info' (and everything under it)
+[38.737s] Copying ../build/air_lab_common/air_lab_common.egg-info to /home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_common/lib/python3.8/site-packages/air_lab_common-0.0.0-py3.8.egg-info
+[38.944s] running install_scripts
+[39.180s] writing list of installed files to '/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_common/install.log'
+[39.217s] Invoked command in '/home/antel460/TDDE05/ros2_ws/src/labs/air_lab_common' returned '0': PYTHONPATH=/home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_common/prefix_override:/home/antel460/TDDE05/ros2_ws/src/labs/install/air_lab_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/air_lab_common build --build-base /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_common/build install --record /home/antel460/TDDE05/ros2_ws/src/labs/build/air_lab_common/install.log --single-version-externally-managed
